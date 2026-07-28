@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 11,
+  "storage": {
+    "draftKey": "pagecraft:draft:v1",
+    "blockLibraryKey": "pagecraft:block-library:v1",
+    "blockLibraryLimit": 16
+  },
+  "defaultPageMeta": {
+    "title": "我的第一个网站",
+    "description": "用 PageCraft 轻松创建一个属于自己的网页。",
+    "canvasWidth": 820,
+    "canvasHeight": 760,
+    "siteWidth": 1440,
+    "pageBackground": "#f1f2f6",
+    "sectionGap": 0,
+    "sectionRadius": 0,
+    "theme": "studio",
+    "cursor": "glow",
+    "fontMode": "modern",
+    "density": "balanced",
+    "typeScale": "standard",
+    "scrollProgress": true,
+    "accentColor": ""
+  },
+  "initialBlocks": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "label": "首屏",
+      "title": "把想法，变成一个网站。",
+      "description": "无需写代码，从一个空白画布开始，做出属于你的独特页面。",
+      "cta": "开始创作",
+      "url": ""
+    },
+    {
+      "id": "feature",
+      "type": "feature",
+      "label": "特性区",
+      "title": "简单、自由、可分享",
+      "description": "像搭积木一样组合内容，随时预览，随时发布。",
+      "url": ""
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "label": "联系区",
+      "title": "准备好开始了吗？",
+      "description": "创建你的第一个页面，让灵感被更多人看见。",
+      "url": ""
+    }
+  ],
+  "components": [
+    { "type": "nav", "label": "导航栏", "icon": "layout", "note": "品牌、菜单与行动按钮" },
+    { "type": "hero", "label": "首屏", "icon": "layout", "note": "标题 + 行动按钮" },
+    { "type": "feature", "label": "特性区", "icon": "sparkles", "note": "介绍你的优势" },
+    { "type": "contact", "label": "联系区", "icon": "pointer", "note": "用行动号召完成页面" },
+    { "type": "image", "label": "图片", "icon": "image", "note": "展示视觉内容" },
+    { "type": "split", "label": "图文分栏", "icon": "layout", "note": "图片 + 文字叙事" },
+    { "type": "text", "label": "文字", "icon": "type", "note": "补充一段内容" },
+    { "type": "button", "label": "按钮", "icon": "pointer", "note": "引导访客行动" },
+    { "type": "marquee", "label": "滚动标语", "icon": "type", "note": "制造连续动势" },
+    { "type": "cards", "label": "卡片组", "icon": "sparkles", "note": "展示服务与亮点" },
+    { "type": "stats", "label": "数据区", "icon": "layout", "note": "突出数字成果" },
+    { "type": "quote", "label": "引语区", "icon": "type", "note": "表达观点与态度" },
+    { "type": "team", "label": "人物展示", "icon": "image", "note": "介绍成员与角色" },
+    { "type": "faq", "label": "常见问题", "icon": "pointer", "note": "清晰回答访客疑问" },
+    { "type": "timeline", "label": "时间线", "icon": "layout", "note": "展示历程与重要节点" },
+    { "type": "bento", "label": "Bento 网格", "icon": "layout", "note": "不规则内容拼贴" },
+    { "type": "tabs", "label": "内容标签页", "icon": "pointer", "note": "点击切换多组内容" },
+    { "type": "showcase", "label": "横向作品展", "icon": "image", "note": "沉浸式浏览项目" },
+    { "type": "sticky", "label": "粘性故事", "icon": "type", "note": "滚动讲述完整故事" },
+    { "type": "collage", "label": "图片拼贴墙", "icon": "image", "note": "错位组织多张图片" },
+    { "type": "gallery", "label": "瀑布流画廊", "icon": "image", "note": "高低错落的沉浸图片墙" },
+    { "type": "accordion", "label": "服务展开栈", "icon": "pointer", "note": "逐项展开能力与说明" },
+    { "type": "immersive", "label": "沉浸式封面", "icon": "sparkles", "note": "全屏舞台、入口与景深图层" },
+    { "type": "fullscreen", "label": "全屏项目", "icon": "image", "note": "一张图片占满视线" },
+    { "type": "compare", "label": "图片对比", "icon": "image", "note": "拖动查看前后变化" },
+    { "type": "testimonials", "label": "用户评价", "icon": "type", "note": "横向展示真实反馈" },
+    { "type": "pricing", "label": "价格方案", "icon": "layout", "note": "对比不同服务计划" },
+    { "type": "logos", "label": "品牌 Logo 墙", "icon": "sparkles", "note": "滚动展示合作品牌" },
+    { "type": "footer", "label": "多栏页脚", "icon": "layout", "note": "链接、说明与版权" }
+  ],
+  "componentGroups": [
+    { "value": "all", "label": "全部" },
+    { "value": "structure", "label": "结构" },
+    { "value": "content", "label": "内容" },
+    { "value": "visual", "label": "视觉" },
+    { "value": "business", "label": "转化" }
+  ],
+  "componentGroupTypes": {
+    "structure": ["nav", "hero", "split", "text", "footer"],
+    "content": ["feature", "cards", "stats", "quote", "team", "faq", "tabs", "timeline", "sticky", "accordion", "testimonials"],
+    "visual": ["image", "marquee", "bento", "showcase", "collage", "gallery", "immersive", "fullscreen", "compare", "logos"],
+    "business": ["button", "contact", "pricing"]
+  },
+  "visualRecipes": [
+    {
+      "id": "airy",
+      "label": "通透",
+      "config": { "visualPreset": "gradient", "layoutVariant": "centered", "decoration": "orbs", "material": "mesh", "sectionDivider": "wave", "effect": "fade-up", "elementEffect": "float", "hoverEffect": "spotlight" }
+    },
+    {
+      "id": "editorial",
+      "label": "杂志",
+      "config": { "visualPreset": "editorial", "layoutVariant": "offset", "decoration": "labels", "material": "paper", "sectionDivider": "slant", "effect": "blur-in", "elementEffect": "mask", "hoverEffect": "lift" }
+    },
+    {
+      "id": "immersive",
+      "label": "沉浸",
+      "config": { "visualPreset": "dark", "layoutVariant": "poster", "decoration": "grid", "material": "scanlines", "sectionDivider": "curve", "effect": "zoom-in", "elementEffect": "drift", "hoverEffect": "glow" }
+    },
+    {
+      "id": "aurora",
+      "label": "极光",
+      "config": {
+        "visualPreset": "none",
+        "layoutVariant": "centered",
+        "decoration": "orbs",
+        "material": "mesh",
+        "sectionDivider": "curve",
+        "effect": "blur-in",
+        "elementEffect": "float",
+        "hoverEffect": "spotlight",
+        "motionSpeed": "slow",
+        "styles": { "backgroundMode": "gradient", "gradientFrom": "#0b1235", "gradientTo": "#8d4ec7", "gradientAngle": 145, "textColor": "#f7f4ff", "accentColor": "#72f1d1" }
+      }
+    },
+    {
+      "id": "signal",
+      "label": "信号",
+      "config": {
+        "visualPreset": "none",
+        "layoutVariant": "diagonal",
+        "decoration": "grid",
+        "material": "scanlines",
+        "sectionDivider": "slant",
+        "effect": "zoom-in",
+        "elementEffect": "stagger",
+        "hoverEffect": "glow",
+        "motionSpeed": "fast",
+        "styles": { "backgroundMode": "gradient", "gradientFrom": "#ff5a36", "gradientTo": "#f5ef54", "gradientAngle": 115, "textColor": "#151515", "accentColor": "#151515" }
+      }
+    },
+    {
+      "id": "gallery",
+      "label": "画册",
+      "config": {
+        "visualPreset": "editorial",
+        "layoutVariant": "frame",
+        "decoration": "labels",
+        "material": "paper",
+        "sectionDivider": "none",
+        "effect": "fade-up",
+        "elementEffect": "mask",
+        "hoverEffect": "image-zoom",
+        "motionSpeed": "slow",
+        "styles": { "backgroundMode": "gradient", "gradientFrom": "#eee6d8", "gradientTo": "#d7c5b2", "gradientAngle": 160, "textColor": "#26211c", "accentColor": "#9d2e24" }
+      }
+    }
+  ],
+  "contentRecipes": [
+    {
+      "id": "hero-portfolio",
+      "label": "作品集开场",
+      "types": ["hero"],
+      "content": {
+        "title": "把正在发生的想法，做成值得停留的作品。",
+        "description": "这里收集设计、影像与实验，也记录每一次从模糊到清晰的过程。",
+        "cta": "浏览作品"
+      }
+    },
+    {
+      "id": "hero-product",
+      "label": "产品发布",
+      "types": ["hero"],
+      "content": {
+        "title": "少一点复杂，多一点真正完成。",
+        "description": "一个让团队更快理解任务、同步进度并持续向前的工作空间。",
+        "cta": "免费开始"
+      }
+    },
+    {
+      "id": "cards-capabilities",
+      "label": "核心能力",
+      "types": ["cards"],
+      "content": {
+        "title": "从方向到上线，保持同一种清晰。",
+        "description": "把彼此割裂的工作重新组织成完整体验。",
+        "items": [
+          { "title": "策略定位", "description": "找到真正值得被解决的问题。" },
+          { "title": "视觉系统", "description": "建立独特且可以持续生长的语言。" },
+          { "title": "数字实现", "description": "让每个设计决定稳定地运行起来。" }
+        ]
+      }
+    },
+    {
+      "id": "cards-values",
+      "label": "品牌价值",
+      "types": ["cards"],
+      "content": {
+        "title": "我们相信，好的体验来自克制与诚实。",
+        "description": "三个原则，帮助每个项目做出更清楚的选择。",
+        "items": [
+          { "title": "先理解", "description": "不急着给答案，先看见真实语境。" },
+          { "title": "敢取舍", "description": "让重要内容拥有足够的注意力。" },
+          { "title": "持续验证", "description": "让作品在真实使用中继续进化。" }
+        ]
+      }
+    },
+    {
+      "id": "accordion-process",
+      "label": "合作流程",
+      "types": ["accordion"],
+      "content": {
+        "title": "每一步都清晰，合作才会真正自由。",
+        "description": "从第一次对话到发布后的持续迭代。",
+        "items": [
+          { "title": "理解与定义", "description": "一起确认目标、受众、限制和真正需要被改变的事情。" },
+          { "title": "探索与选择", "description": "建立多个方向，通过讨论和原型找到最有力量的一条。" },
+          { "title": "设计与实现", "description": "把内容、视觉和交互整合为可以稳定运行的完整体验。" },
+          { "title": "发布与进化", "description": "观察真实反馈，继续修正细节并拓展新的可能。" }
+        ]
+      }
+    },
+    {
+      "id": "accordion-services",
+      "label": "服务清单",
+      "types": ["accordion"],
+      "content": {
+        "title": "需要的不只是页面，而是一套完整表达。",
+        "description": "根据项目阶段，自由组合不同能力。",
+        "items": [
+          { "title": "品牌与策略", "description": "定位、命名、叙事结构与品牌基础系统。" },
+          { "title": "网站与产品", "description": "内容架构、界面设计、交互原型与响应式实现。" },
+          { "title": "影像与内容", "description": "视觉方向、图片策划、动态设计与发布素材。" },
+          { "title": "长期设计伙伴", "description": "持续优化现有体验，并支持新的业务与内容需求。" }
+        ]
+      }
+    },
+    {
+      "id": "pricing-digital",
+      "label": "数字产品",
+      "types": ["pricing"],
+      "content": {
+        "title": "从第一步开始，按真实需求成长。",
+        "description": "透明的范围，也保留继续升级的空间。",
+        "items": [
+          { "title": "个人", "value": "¥0", "description": "适合验证想法与个人页面" },
+          { "title": "团队", "value": "¥69", "description": "适合稳定协作与持续发布" },
+          { "title": "企业", "value": "定制", "description": "适合权限、安全与专属支持" }
+        ]
+      }
+    },
+    {
+      "id": "pricing-studio",
+      "label": "创意服务",
+      "types": ["pricing"],
+      "content": {
+        "title": "选择与当前阶段匹配的合作深度。",
+        "description": "每个方案都可以根据目标重新组合。",
+        "items": [
+          { "title": "方向工作坊", "value": "1 周", "description": "梳理问题、内容与视觉方向" },
+          { "title": "完整网站", "value": "4–8 周", "description": "从策略、设计到上线交付" },
+          { "title": "长期伙伴", "value": "按月", "description": "持续迭代品牌与数字体验" }
+        ]
+      }
+    }
+  ],
+  "themes": [
+    { "value": "studio", "label": "创意工作室", "note": "深浅交替与紫色光感", "accent": "#6557ef" },
+    { "value": "editorial", "label": "数字杂志", "note": "纸张、衬线与大留白", "accent": "#9d2e24" },
+    { "value": "soft", "label": "柔和作品集", "note": "有机渐变与圆润卡片", "accent": "#b45f9c" },
+    { "value": "brutal", "label": "潮流粗野", "note": "高饱和与硬边阴影", "accent": "#ff4e2f" },
+    { "value": "future", "label": "未来界面", "note": "深色网格与霓虹光线", "accent": "#50f5cf" },
+    { "value": "luxury", "label": "黑白奢华", "note": "克制、精细与电影感", "accent": "#c7a96b" }
+  ],
+  "blockDefaults": {
+    "contentResetFields": ["title", "description", "cta", "url", "items"],
+    "base": {
+      "title": "一个新的内容区",
+      "description": "编辑这里的文字，表达你的想法。",
+      "cta": "开始创作",
+      "url": "",
+      "imageUrl": "",
+      "altText": "",
+      "imagePosition": "center",
+      "imageFit": "cover",
+      "imageScale": 1,
+      "effect": "none",
+      "elementEffect": "none",
+      "hoverEffect": "none",
+      "visualPreset": "none",
+      "layoutVariant": "default",
+      "decoration": "none",
+      "material": "none",
+      "backgroundImage": "",
+      "backgroundPosition": "center",
+      "backgroundOverlay": 0.25,
+      "comparePosition": 50,
+      "visibility": "both",
+      "sectionDivider": "none",
+      "sceneTransition": "none",
+      "motionSpeed": "normal",
+      "buttonStyle": "solid",
+      "items": []
+    },
+    "types": {
+      "nav": {
+        "title": "PageCraft Studio",
+        "cta": "联系我",
+        "stickyNav": true,
+        "buttonStyle": "pill",
+        "items": [
+          { "title": "作品", "description": "#work" },
+          { "title": "关于", "description": "#about" },
+          { "title": "联系", "description": "#contact" }
+        ]
+      },
+      "hero": { "elementEffect": "mask" },
+      "image": { "description": "替换成你的图片或作品集。" },
+      "split": { "effect": "fade-up" },
+      "text": { "title": "写下你的故事" },
+      "button": { "title": "了解更多", "cta": "点击这里" },
+      "cards": {
+        "title": "把复杂的事情，讲得清楚而漂亮。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "lift",
+        "visualPreset": "glass",
+        "items": [
+          { "title": "自由布局", "description": "组合文字、图片和留白，让每一页都拥有自己的节奏。" },
+          { "title": "视觉动效", "description": "用恰到好处的动画回应滚动、悬停和点击。" },
+          { "title": "一键导出", "description": "把作品导出成独立网页，随时分享和部署。" }
+        ]
+      },
+      "stats": {
+        "title": "让数字替你说话。",
+        "visualPreset": "editorial",
+        "items": [
+          { "value": "12+", "label": "视觉区块" },
+          { "value": "4", "label": "动效预设" },
+          { "value": "100%", "label": "本地可控" }
+        ]
+      },
+      "quote": {
+        "title": "设计不是装饰，而是让内容拥有被记住的方式。",
+        "description": "— PageCraft Studio",
+        "visualPreset": "dark"
+      },
+      "team": {
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "tilt",
+        "visualPreset": "gradient",
+        "items": [
+          { "name": "林澈", "role": "视觉设计" },
+          { "name": "周屿", "role": "创意开发" },
+          { "name": "乔安", "role": "品牌策略" }
+        ]
+      },
+      "faq": {
+        "title": "你可能想知道的事情。",
+        "layoutVariant": "offset",
+        "decoration": "sparkles",
+        "items": [
+          { "title": "需要会写代码吗？", "description": "不需要。组合区块并修改内容，就能完成自己的页面。" },
+          { "title": "可以导出和分享吗？", "description": "可以导出为独立 HTML，也可以保存 JSON 后继续编辑。" },
+          { "title": "手机上也能正常显示吗？", "description": "页面提供移动端布局，并会随屏幕尺寸自动调整。" }
+        ]
+      },
+      "timeline": {
+        "title": "每一步，都让想法更清晰。",
+        "layoutVariant": "offset",
+        "decoration": "grid",
+        "items": [
+          { "value": "01", "label": "提出想法" },
+          { "value": "02", "label": "组合内容" },
+          { "value": "03", "label": "预览发布" }
+        ]
+      },
+      "bento": {
+        "title": "不是排列内容，而是在组织注意力。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "lift",
+        "decoration": "orbs",
+        "material": "mesh",
+        "items": [
+          { "title": "视觉先于解释", "description": "用大面积色彩建立第一印象。" },
+          { "title": "自由组合", "description": "让不同尺寸的信息自然形成节奏。" },
+          { "title": "细节回应", "description": "光泽、悬停和层次共同完成体验。" },
+          { "title": "保持独特", "description": "页面不必长得像同一个模板。" }
+        ]
+      },
+      "tabs": {
+        "title": "让不同内容，在同一个舞台上被看见。",
+        "description": "适合展示服务能力、产品模块或多组作品方向。",
+        "effect": "fade-up",
+        "items": [
+          { "title": "策略与方向", "description": "先理解目标、受众和真正的问题，再建立清晰的内容结构。" },
+          { "title": "视觉与体验", "description": "用字体、颜色、留白和互动，把抽象气质变成可以感受的页面。" },
+          { "title": "开发与上线", "description": "让设计稳定运行在不同设备上，并保留继续生长的空间。" }
+        ]
+      },
+      "showcase": {
+        "title": "一些值得停下来看的作品。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "image-zoom",
+        "decoration": "labels",
+        "items": [
+          { "title": "品牌重塑", "description": "视觉身份与数字体验" },
+          { "title": "空间叙事", "description": "展览与交互装置" },
+          { "title": "未来产品", "description": "概念设计与原型" }
+        ]
+      },
+      "sticky": {
+        "title": "让故事随着滚动，一层层展开。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "visualPreset": "dark",
+        "material": "scanlines",
+        "items": [
+          { "title": "从一个问题开始", "description": "先理解真正需要被表达的内容，而不是急着选择样式。" },
+          { "title": "建立视觉语言", "description": "让字体、色彩、图片和运动遵循同一种气质。" },
+          { "title": "让体验被记住", "description": "用恰到好处的互动回应访客的每一次探索。" }
+        ]
+      },
+      "collage": {
+        "title": "把瞬间放在一起，让它们彼此产生意义。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "image-zoom",
+        "material": "paper",
+        "items": [
+          { "title": "城市切片", "description": "光线与结构", "imageUrl": "" },
+          { "title": "安静时刻", "description": "人物与情绪", "imageUrl": "" },
+          { "title": "材质实验", "description": "触感与颜色", "imageUrl": "" },
+          { "title": "未完草图", "description": "过程与想法", "imageUrl": "" },
+          { "title": "远方风景", "description": "空间与记忆", "imageUrl": "" }
+        ]
+      },
+      "gallery": {
+        "title": "让每一张图片，拥有不同的呼吸。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "image-zoom",
+        "material": "paper",
+        "items": [
+          { "title": "晨光", "description": "系列 01", "imageUrl": "" },
+          { "title": "结构", "description": "系列 02", "imageUrl": "" },
+          { "title": "流动", "description": "系列 03", "imageUrl": "" },
+          { "title": "余温", "description": "系列 04", "imageUrl": "" },
+          { "title": "远景", "description": "系列 05", "imageUrl": "" },
+          { "title": "回声", "description": "系列 06", "imageUrl": "" }
+        ]
+      },
+      "accordion": {
+        "title": "能力不是清单，而是一组可以展开的答案。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "hoverEffect": "lift",
+        "material": "mesh",
+        "items": [
+          { "title": "品牌策略", "description": "从真实问题出发，建立定位、叙事与长期可生长的品牌方向。" },
+          { "title": "视觉系统", "description": "把字体、色彩、图像和版式组织成独特且一致的视觉语言。" },
+          { "title": "数字体验", "description": "让网站与产品在不同设备上保持清晰、自然并富有回应。" },
+          { "title": "持续共创", "description": "上线后继续观察、迭代，让作品跟随真实需求一起成长。" }
+        ]
+      },
+      "immersive": {
+        "title": "走进一个只属于你的世界。",
+        "description": "让画面、文字与运动共同建立第一印象，邀请访客继续探索。",
+        "cta": "进入故事",
+        "effect": "none",
+        "elementEffect": "mask",
+        "hoverEffect": "spotlight",
+        "decoration": "none",
+        "material": "paper",
+        "sceneTransition": "circle"
+      },
+      "fullscreen": {
+        "title": "让一个作品，占满整个视线。",
+        "effect": "fade-up",
+        "elementEffect": "drift",
+        "hoverEffect": "image-zoom",
+        "decoration": "sparkles",
+        "material": "noise"
+      },
+      "compare": {
+        "title": "拖动分界，看到改变发生。",
+        "effect": "fade-up",
+        "material": "beams",
+        "items": [
+          { "title": "调整前", "description": "原始状态", "imageUrl": "" },
+          { "title": "调整后", "description": "完成状态", "imageUrl": "" }
+        ]
+      },
+      "testimonials": {
+        "title": "好的合作，会在作品之外留下回声。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "items": [
+          { "title": "他们没有给我们一个模板，而是帮我们找到真正属于自己的表达方式。", "description": "林溪 / 品牌创始人" },
+          { "title": "从第一次讨论到最终上线，整个过程始终清晰、坦诚，而且充满惊喜。", "description": "周远 / 产品负责人" },
+          { "title": "新网站上线后，客户终于能准确理解我们到底在做什么。", "description": "Mina / 创意总监" }
+        ]
+      },
+      "pricing": {
+        "title": "选择适合当前阶段的合作方式。",
+        "effect": "fade-up",
+        "elementEffect": "stagger",
+        "items": [
+          { "title": "起步", "value": "¥0", "description": "适合个人尝试与简单单页" },
+          { "title": "专业", "value": "¥99", "description": "适合完整品牌网站与作品集" },
+          { "title": "定制", "value": "联系咨询", "description": "适合复杂交互与长期合作" }
+        ]
+      },
+      "logos": {
+        "title": "被这些团队信任与选择",
+        "items": [
+          { "title": "NORTH", "description": "" },
+          { "title": "FIELD", "description": "" },
+          { "title": "MORROW", "description": "" },
+          { "title": "STUDIO 24", "description": "" },
+          { "title": "LUMA", "description": "" },
+          { "title": "OBJECTS", "description": "" }
+        ]
+      },
+      "footer": {
+        "title": "保持好奇，继续创造。",
+        "description": "一个关于设计、技术和想象力的独立工作室。",
+        "effect": "fade-up",
+        "visualPreset": "dark",
+        "items": [
+          { "title": "作品集", "description": "#work" },
+          { "title": "关于我们", "description": "#about" },
+          { "title": "Instagram", "description": "https://instagram.com" },
+          { "title": "联系邮箱", "description": "mailto:hello@example.com" }
+        ]
+      }
+    }
+  },
+  "styleDefaults": {
+    "base": {
+      "background": "#ffffff",
+      "backgroundMode": "solid",
+      "gradientFrom": "#ffffff",
+      "gradientTo": "#dcefff",
+      "gradientAngle": 135,
+      "textColor": "",
+      "accentColor": "",
+      "radius": 0,
+      "align": "left",
+      "paddingY": 60,
+      "minHeight": 225
+    },
+    "types": {
+      "nav": { "minHeight": 80 },
+      "hero": { "background": "#f3f0ff", "gradientFrom": "#f3f0ff", "minHeight": 330 },
+      "contact": { "background": "#192031", "gradientFrom": "#192031", "gradientTo": "#5145a8" },
+      "marquee": { "paddingY": 25 },
+      "button": { "paddingY": 38 },
+      "logos": { "minHeight": 140 },
+      "team": { "minHeight": 430 },
+      "cards": { "minHeight": 390 },
+      "stats": { "minHeight": 390 },
+      "faq": { "minHeight": 390 },
+      "tabs": { "minHeight": 390 },
+      "timeline": { "minHeight": 390 },
+      "bento": { "minHeight": 390 },
+      "showcase": { "minHeight": 390 },
+      "testimonials": { "minHeight": 390 },
+      "pricing": { "minHeight": 390 },
+      "collage": { "minHeight": 520 },
+      "compare": { "minHeight": 520 },
+      "accordion": { "minHeight": 520 },
+      "sticky": { "minHeight": 620 },
+      "immersive": { "minHeight": 680, "paddingY": 0 },
+      "fullscreen": { "minHeight": 620 },
+      "gallery": { "minHeight": 620 },
+      "footer": { "minHeight": 420 },
+      "quote": { "minHeight": 350 }
+    }
+  },
+  "newItemDefaults": {
+    "content": { "title": "新的卡片", "description": "在这里补充这张卡片的内容。" },
+    "metric": { "value": "100%", "label": "新的数据" },
+    "person": { "name": "新成员", "role": "角色或职位" },
+    "contentTypes": ["cards", "tabs", "bento", "showcase", "sticky", "collage", "gallery", "accordion", "compare", "testimonials", "logos"],
+    "metricTypes": ["stats"],
+    "types": {
+      "faq": { "title": "新的问题", "description": "在这里填写对应的回答。" },
+      "timeline": { "value": "04", "label": "新的时间节点" },
+      "nav": { "title": "新菜单", "description": "#section" },
+      "footer": { "title": "新链接", "description": "#" },
+      "pricing": { "title": "新方案", "value": "定制", "description": "填写这个方案包含的服务。" }
+    }
+  },
+  "itemEditors": {
+    "cards": { "label": "卡片内容", "fields": ["title", "description"] },
+    "stats": { "label": "数据内容", "fields": ["value", "label"] },
+    "team": { "label": "人物内容", "fields": ["name", "role"] },
+    "faq": { "label": "问题内容", "fields": ["title", "description"] },
+    "timeline": { "label": "时间节点", "fields": ["value", "label"] },
+    "bento": { "label": "网格内容", "fields": ["title", "description"] },
+    "tabs": { "label": "标签页内容（名称／说明）", "fields": ["title", "description"] },
+    "showcase": { "label": "作品内容", "fields": ["title", "description"], "supportsImage": true },
+    "sticky": { "label": "故事章节", "fields": ["title", "description"] },
+    "collage": { "label": "拼贴图片", "fields": ["title", "description"], "supportsImage": true },
+    "gallery": { "label": "画廊图片与说明", "fields": ["title", "description"], "supportsImage": true },
+    "accordion": { "label": "可展开服务内容", "fields": ["title", "description"] },
+    "compare": { "label": "对比图片（前／后）", "fields": ["title", "description"], "supportsImage": true },
+    "testimonials": { "label": "评价内容（评价／署名）", "fields": ["title", "description"] },
+    "pricing": { "label": "价格方案", "fields": ["title", "description", "value"] },
+    "logos": { "label": "品牌名称", "fields": ["title", "description"] },
+    "nav": { "label": "导航菜单（名称／链接）", "fields": ["title", "description"] },
+    "footer": { "label": "页脚链接（名称／链接）", "fields": ["title", "description"] }
+  },
+  "editorOptions": {
+    "inspectorTabs": [["content", "内容"], ["design", "设计"], ["motion", "动效"]],
+    "sectionDividers": [["none", "平直"], ["wave", "波浪"], ["slant", "斜切"], ["curve", "弧形"]],
+    "sceneTransitions": [["none", "无转场"], ["circle", "圆形揭幕"], ["curtain", "幕布横切"], ["paper", "纸张揭页"], ["dissolve", "柔焦溶解"]],
+    "visibility": [["both", "全部"], ["desktop", "桌面"], ["mobile", "移动"]],
+    "buttonStyles": [["solid", "实心"], ["outline", "描边"], ["soft", "柔和"], ["pill", "胶囊"]],
+    "motionSpeeds": [["fast", "轻快"], ["normal", "自然"], ["slow", "舒缓"]],
+    "backgroundModes": [["solid", "纯色"], ["gradient", "自定义渐变"]],
+    "alignments": [["left", "左"], ["center", "中"], ["right", "右"]],
+    "cursors": [["default", "系统"], ["dot", "圆点"], ["ring", "圆环"], ["glow", "光晕"]]
+  },
+  "templates": [
+    {
+      "id": "creative-studio",
+      "name": "未来创意工作室",
+      "note": "适合作品集、设计团队与个人品牌",
+      "theme": "future",
+      "accent": "紫色光感",
+      "blocks": [
+        { "type": "nav", "title": "NOVA / STUDIO", "cta": "开始合作", "buttonStyle": "pill", "items": [{ "title": "作品", "description": "#work" }, { "title": "能力", "description": "#services" }, { "title": "联系", "description": "#contact" }] },
+        { "type": "logos", "title": "与这些不同领域的团队共同创造", "items": [{ "title": "NORTH" }, { "title": "FIELD" }, { "title": "MORROW" }, { "title": "STUDIO 24" }, { "title": "OBJECTS" }] },
+        { "type": "hero", "title": "我们把大胆的想法，变成有生命的数字体验。", "description": "品牌、网站与互动设计，为不愿被忽略的创造者而生。", "cta": "查看作品", "layoutVariant": "poster", "decoration": "orbs", "material": "mesh", "elementEffect": "mask", "hoverEffect": "spotlight", "motionSpeed": "slow" },
+        { "type": "bento", "title": "跨越策略、设计与技术。", "description": "每个项目都从不同的问题开始。", "items": [{ "title": "品牌系统", "description": "从定位到完整视觉语言。" }, { "title": "数字产品", "description": "把复杂体验变得自然。" }, { "title": "创意开发", "description": "用代码实现不寻常的互动。" }, { "title": "持续进化", "description": "发布不是结束，而是新的开始。" }], "visualPreset": "dark", "material": "beams" },
+        { "type": "showcase", "title": "最近完成的实验与作品。", "description": "拖动浏览我们正在探索的方向。", "items": [{ "title": "Signal / 01", "description": "未来生活品牌" }, { "title": "Morrow / 02", "description": "文化空间体验" }, { "title": "Field / 03", "description": "新型数字产品" }], "decoration": "labels" },
+        { "type": "sticky", "title": "从混乱到清晰。", "description": "一个好项目需要有节奏地发生。", "items": [{ "title": "理解真正的问题", "description": "通过研究和对话，找到最值得被解决的核心。" }, { "title": "建立独特语言", "description": "让每个视觉与交互决定都服务于同一种感受。" }, { "title": "把体验带到现实", "description": "设计、开发、测试，再把作品交给真实世界。" }] },
+        { "type": "testimonials", "title": "合作结束后，故事仍然继续。", "description": "来自真实项目伙伴的反馈。", "items": [{ "title": "他们让我们的品牌第一次真正像我们自己。", "description": "Mina / 创始人" }, { "title": "大胆，但每一个决定都有清晰的理由。", "description": "Leo / 产品负责人" }] },
+        { "type": "footer", "title": "下一件值得被记住的作品，会是什么？", "description": "欢迎带着问题、草图或者一个尚未成形的念头来找我们。", "items": [{ "title": "Instagram", "description": "https://instagram.com" }, { "title": "Email", "description": "mailto:hello@example.com" }] }
+      ]
+    },
+    {
+      "id": "editorial-portfolio",
+      "name": "独立杂志作品集",
+      "note": "适合摄影、艺术、建筑与策展项目",
+      "theme": "editorial",
+      "accent": "纸张与衬线",
+      "blocks": [
+        { "type": "nav", "title": "OBJECTS & STORIES", "cta": "订阅", "buttonStyle": "outline", "items": [{ "title": "专题", "description": "#stories" }, { "title": "档案", "description": "#archive" }, { "title": "关于", "description": "#about" }] },
+        { "type": "hero", "anchor": "stories", "title": "观察日常里，容易被错过的形状。", "description": "一本关于空间、物件、人与时间的独立数字刊物。", "cta": "阅读本期", "buttonStyle": "outline", "visualPreset": "editorial", "layoutVariant": "offset", "material": "paper", "elementEffect": "mask", "motionSpeed": "slow" },
+        { "type": "collage", "anchor": "archive", "title": "视觉档案 / Vol. 04", "description": "五个来自不同城市的安静片段。", "items": [{ "title": "东京", "description": "清晨 05:42", "imageUrl": "" }, { "title": "杭州", "description": "雨后街道", "imageUrl": "" }, { "title": "柏林", "description": "混凝土与光", "imageUrl": "" }, { "title": "里斯本", "description": "黄色电车", "imageUrl": "" }, { "title": "上海", "description": "夜晚橱窗", "imageUrl": "" }], "material": "paper" },
+        { "type": "quote", "title": "真正值得记录的，往往不是事件，而是事件经过之后留下的光。", "description": "— 本期编辑手记", "visualPreset": "dark", "layoutVariant": "poster", "elementEffect": "mask" },
+        { "type": "timeline", "anchor": "about", "title": "本期制作过程。", "description": "从第一次出发，到最终成为一组完整叙事。", "items": [{ "value": "MAR", "label": "开始田野记录" }, { "value": "MAY", "label": "整理图像档案" }, { "value": "JUL", "label": "完成编辑出版" }], "visualPreset": "editorial" },
+        { "type": "footer", "title": "保持缓慢，继续观察。", "description": "每两个月发布一期新的视觉专题。", "items": [{ "title": "往期内容", "description": "#archive" }, { "title": "投稿", "description": "mailto:editor@example.com" }] }
+      ]
+    },
+    {
+      "id": "product-launch",
+      "name": "产品发布页面",
+      "note": "适合应用、工具、硬件与新产品介绍",
+      "theme": "soft",
+      "accent": "清晰转化路径",
+      "blocks": [
+        { "type": "nav", "title": "LUMA", "cta": "免费体验", "buttonStyle": "pill", "items": [{ "title": "功能", "description": "#features" }, { "title": "价格", "description": "#pricing" }, { "title": "问答", "description": "#faq" }] },
+        { "type": "hero", "title": "把每天的复杂工作，变成一个清晰的流程。", "description": "Luma 帮助小团队组织项目、共享进展，并把时间留给真正重要的事情。", "cta": "立即开始", "buttonStyle": "pill", "layoutVariant": "centered", "visualPreset": "gradient", "decoration": "orbs", "material": "mesh", "elementEffect": "mask", "motionSpeed": "fast" },
+        { "type": "logos", "title": "已经加入 Luma 的团队", "items": [{ "title": "NORTH" }, { "title": "LUMA LAB" }, { "title": "FIELD" }, { "title": "MORROW" }, { "title": "STUDIO 24" }] },
+        { "type": "cards", "anchor": "features", "title": "少一些管理，多一些完成。", "description": "从第一次使用开始就足够简单。", "motionSpeed": "fast", "items": [{ "title": "统一工作台", "description": "任务、文档和讨论不再散落。" }, { "title": "自动化提醒", "description": "让重要进度主动找到你。" }, { "title": "清晰的数据", "description": "随时知道团队正在向哪里前进。" }] },
+        { "type": "compare", "title": "改变的不只是界面，而是工作节奏。", "description": "拖动查看使用 Luma 前后的工作状态。", "items": [{ "title": "使用前", "description": "信息分散", "imageUrl": "" }, { "title": "使用后", "description": "清晰协作", "imageUrl": "" }] },
+        { "type": "tabs", "title": "一个空间，覆盖团队每天的关键工作。", "description": "按场景切换，快速理解 Luma 如何融入不同工作方式。", "items": [{ "title": "计划与优先级", "description": "把目标、任务和负责人放进同一条清晰路径，所有人都知道下一步。" }, { "title": "同步与协作", "description": "围绕真实内容展开讨论，减少散落在不同工具里的重复确认。" }, { "title": "回顾与洞察", "description": "从进度和结果中看见团队节奏，让下一次决策更有依据。" }], "material": "mesh", "hoverEffect": "spotlight" },
+        { "type": "stats", "title": "被真实团队持续使用。", "description": "更少的切换，更稳定的推进。", "items": [{ "value": "42%", "label": "减少重复沟通" }, { "value": "3.2h", "label": "每周节省时间" }, { "value": "96%", "label": "团队持续使用" }] },
+        { "type": "pricing", "title": "从免费开始，随团队一起成长。", "description": "没有隐藏费用，可以随时调整。", "items": [{ "title": "个人", "value": "¥0", "description": "适合个人项目与轻量计划" }, { "title": "团队", "value": "¥69", "description": "适合持续协作的小型团队" }, { "title": "企业", "value": "联系咨询", "description": "高级安全与定制支持" }] },
+        { "type": "faq", "title": "开始之前，你可能想知道。", "description": "没有隐藏条件，也不需要复杂配置。", "items": [{ "title": "需要安装软件吗？", "description": "不需要，浏览器打开即可使用。" }, { "title": "可以导入现有数据吗？", "description": "支持常见表格和项目格式。" }, { "title": "是否提供免费版本？", "description": "个人和小团队可以从免费方案开始。" }] },
+        { "type": "footer", "anchor": "docs", "title": "今天就让工作重新变得清晰。", "description": "免费开始，无需信用卡。", "items": [{ "title": "产品文档", "description": "#docs" }, { "title": "联系我们", "description": "mailto:hello@example.com" }] }
+      ]
+    }
+  ]
+}

@@ -2,18 +2,20 @@
   "name": "pagecraft",
   "private": true,
   "version": "0.1.0",
+  "packageManager": "pnpm@11.9.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/validate-app-data.mjs && vite",
+    "validate:data": "node scripts/validate-app-data.mjs",
+    "build": "node scripts/validate-app-data.mjs && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
+    "fflate": "^0.8.3",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lucide-react": "latest"
-  },
-  "devDependencies": {}
+    "vite": "latest"
+  }
 }
